@@ -11,8 +11,8 @@ const ButtonContainer = styled.div`
   width: 100px; 
   height: 40px; 
   border-radius: 20px; 
-  background-color: #f0f0f0; 
-  //background-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Background : darkMode.Background)};
+  background-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Primary : lightMode.Background)};
+  border: ${({ theme }) => (theme === 'lightMode' ? 'none' : '1px solid #1a1a1a')};
   position: relative; 
 `;
 
@@ -29,7 +29,6 @@ const Button = styled.button`
 const Circle = styled.div`
   width: 40px; 
   height: 40px; 
-  //background-color: #007bff; 
   background-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Background : darkMode.Background)};
   border-radius: 50%; 
   position: absolute;
@@ -60,7 +59,7 @@ const PillButton = () => {
   },[handleToggle])
 
   return (
-    <ButtonContainer>
+    <ButtonContainer theme={theme}>
       <Button onClick={handleToggle}>
         <Circle toggled={toggled} theme={theme}/>
       </Button>
