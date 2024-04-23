@@ -1,17 +1,25 @@
 "use client";
-import React from 'react';
+import React, { useContext } from 'react';
+import ThemeContext from './context/ThemeContext';
 import styled from 'styled-components';
+import PageSection from '../../components/PageSection';
 import Pillbutton from '../../components/pillbutton';
 
 const Root = styled.div`
-  background-color: yellow;
   color: black;
 `;
 
 export default function page() {
+
+  const { theme, setTheme } = useContext(ThemeContext);
+
+  console.log(theme)
+
   return (
     <Root>
-      <Pillbutton />
+      <PageSection>
+        <Pillbutton/>
+      </PageSection>
     </Root>
   )
 }
