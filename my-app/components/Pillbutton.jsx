@@ -12,7 +12,7 @@ const ButtonContainer = styled.div`
   height: 40px; 
   border-radius: 20px; 
   background-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Primary : lightMode.Background)};
-  border: ${({ theme }) => (theme === 'lightMode' ? 'none' : '1px solid #1a1a1a')};
+  border: ${({ theme }) => (theme === 'lightMode' ? '1px solid #007bff' : '1px solid #1a1a1a')};
   position: relative; 
 `;
 
@@ -34,7 +34,7 @@ const Circle = styled.div`
   position: absolute;
   left: ${({ toggled }) => (toggled ? 'calc(100% - 40px)' : '0')}; 
   transition: left 0.3s ease; 
-  top: 20px; 
+  top: 19px; 
   transform: translateY(-50%); 
 `;
 
