@@ -7,11 +7,17 @@ import Rutgers from './Rutgers';
 import USAttorney from './USAttorney';
 import USArmy from './USArmy';
 import AboutMe from './AboutMe';
+import { mobileBreakpoint } from '../constants/breakpoint';
 
 const Nav = styled.div`
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const ItemContainer = styled.div`
@@ -19,6 +25,10 @@ const ItemContainer = styled.div`
 
     &:hover {
         font-weight: bold;
+    }
+
+    @media (max-width: ${mobileBreakpoint}) {
+        margin-bottom: 8px;
     }
 `;
 
@@ -37,7 +47,7 @@ export default function NavBar() {
     let itemToString = String(itemChose);
 
     const handleClick = (item) => {
-        setItemChose(item);       
+        setItemChose(item);   
     };
 
     useEffect(() => {},[itemChose]);
@@ -57,12 +67,12 @@ export default function NavBar() {
             }
         </Nav>
             {
-                itemToString === 'Designory' ? <DisplayContainer><Designory /></DisplayContainer> :
-                itemToString === 'Xogene' ? <DisplayContainer><Xogene/></DisplayContainer> :
-                itemToString === 'Rutgers' ? <DisplayContainer><Rutgers/></DisplayContainer> :
-                itemToString === "US Attorney's Office" ? <DisplayContainer><USAttorney></USAttorney></DisplayContainer> :
-                itemToString === "US Army" ? <DisplayContainer><USArmy/></DisplayContainer> :
-                itemToString === 'About Me' ? <DisplayContainer><AboutMe /></DisplayContainer> :
+                itemToString === items[0] ? <DisplayContainer><Designory /></DisplayContainer> :
+                itemToString === items[1] ? <DisplayContainer><Xogene/></DisplayContainer> :
+                itemToString === items[2] ? <DisplayContainer><Rutgers/></DisplayContainer> :
+                itemToString === items[3] ? <DisplayContainer><USAttorney></USAttorney></DisplayContainer> :
+                itemToString === items[4] ? <DisplayContainer><USArmy/></DisplayContainer> :
+                itemToString === items[5] ? <DisplayContainer><AboutMe /></DisplayContainer> :
                 <></>
             }
     </>

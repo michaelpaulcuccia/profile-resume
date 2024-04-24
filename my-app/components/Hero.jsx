@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 import HeroImage from '../public/assets/mpc.png';
+import { mobileBreakpoint } from '../constants/breakpoint';
 
 const Root = styled.div`
     display: flex;
@@ -15,6 +16,11 @@ const Root = styled.div`
     h2 {
         font-size: 34px;
     }
+
+    @media (max-width: ${mobileBreakpoint}) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const ContentContainer = styled.div`
@@ -23,6 +29,7 @@ const ContentContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    text-align: center;
 `;
 
 export default function Hero() {
