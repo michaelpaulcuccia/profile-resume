@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-end; 
 
-  h3 {
+  h4 {
     margin-top: 6px;
     display: inline;
   }
@@ -22,9 +22,7 @@ const ButtonContainer = styled.div`
   width: 100px; 
   height: 40px; 
   border-radius: 20px; 
-  margin-right: 3px;
-  background-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Primary : lightMode.Background)};
-  border: ${({ theme }) => (theme === 'lightMode' ? '1px solid #007bff' : '1px solid #1a1a1a')};
+  background-color: ${({ theme }) => (theme === 'lightMode' ? darkMode.Background : lightMode.Background)};
   position: relative; 
 `;
 
@@ -39,14 +37,14 @@ const Button = styled.button`
 `;
 
 const Circle = styled.div`
-  width: 40px; 
-  height: 40px; 
-  background-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Background : darkMode.Background)};
+  width: 41px; 
+  height: 41px; 
+  background-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Background : lightMode.Text)};
   border-radius: 50%; 
   position: absolute;
   left: ${({ toggled }) => (toggled ? 'calc(100% - 40px)' : '0')}; 
   transition: left 0.3s ease; 
-  top: 19px; 
+  top: 20px; 
   transform: translateY(-50%); 
 `;
 
@@ -80,9 +78,9 @@ const PillButton = () => {
         <>
           {
             !toggled ?
-              <h3>light mode</h3>
+              <h4>light mode</h4>
             :
-              <h3>dark mode</h3>
+              <h4>dark mode</h4>
           }
         </>
     </Wrapper>

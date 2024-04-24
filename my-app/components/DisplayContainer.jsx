@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import ThemeContext from '@/app/context/ThemeContext';
 import styled from 'styled-components';
+import { lightMode, darkMode } from '../constants/palette';
 
 const Root = styled.div`
-    border: 1px solid blue;
-    border-radius: 6px;
+    border-color: ${({ theme }) => (theme === 'lightMode' ? lightMode.Text : darkMode.Text)};
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 12px;
     margin-top: 60px;
     padding: 24px 18px;
 
 `;
 
 export default function DisplayContainer({ children }) {
+
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <Root>{children}</Root>
+    <Root theme={theme}>{children}</Root>
   )
 }
