@@ -23,6 +23,8 @@ const Nav = styled.div`
 const ItemContainer = styled.div`
     cursor: pointer;
 
+    font-weight: ${({ selected }) => (selected ? 'bold' : 'normal')};
+
     &:hover {
         font-weight: bold;
     }
@@ -32,7 +34,7 @@ const ItemContainer = styled.div`
     }
 `;
 
-const items = [
+let items = [
     "Designory",
     "Xogene",
     "Rutgers",
@@ -44,10 +46,12 @@ const items = [
 export default function NavBar() {
 
     const [itemChose, setItemChose] = useState('');
+    const [selectedItem, setSelectedItem] = useState(null);
     let itemToString = String(itemChose);
 
-    const handleClick = (item) => {
+    const handleClick = (item,i) => {
         setItemChose(item);   
+        setSelectedItem(i);
     };
 
     useEffect(() => {},[itemChose]);
@@ -59,7 +63,8 @@ export default function NavBar() {
                 items.map((item, i) => (
                     <ItemContainer 
                         key={i} 
-                        onClick={() => handleClick(item)}
+                        onClick={() => handleClick(item,i)}
+                        selected={i === selectedItem}
                     >
                         {item}
                     </ItemContainer>
