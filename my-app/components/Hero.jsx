@@ -12,12 +12,25 @@ const Root = styled.div`
   padding: 0 60px;
   letter-spacing: 1.5px;
 
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 0 10px;
+  }
+
   h1 {
     font-size: 42px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      font-size: 36px;
+      margin-top: 24px;
+    }
   }
 
   h2 {
     font-size: 34px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      font-size: 28px;
+    }
   }
 
   @media (max-width: ${mobileBreakpoint}) {
