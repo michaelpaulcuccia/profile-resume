@@ -20,8 +20,9 @@ const Root = styled.div`
     font-size: 42px;
 
     @media (max-width: ${mobileBreakpoint}) {
-      font-size: 36px;
+      font-size: 32px;
       margin-top: 24px;
+      margin-bottom: 6px;
     }
   }
 
@@ -29,13 +30,28 @@ const Root = styled.div`
     font-size: 34px;
 
     @media (max-width: ${mobileBreakpoint}) {
-      font-size: 28px;
+      font-size: 24px;
+      margin-bottom: 6px;
     }
   }
 
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
     align-items: center;
+  }
+
+  h4 {
+    @media (max-width: ${mobileBreakpoint}) {
+      margin-bottom: 6px;
+    }
+  }
+
+  br {
+    display: none;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      display: block;
+    }
   }
 `;
 
@@ -70,11 +86,14 @@ export default function Hero() {
         style={{ borderRadius: "12px" }}
       />
       <ContentContainer>
-        <h1>Michael-Paul Cuccia</h1>
-        <h2>Full Stack Developer</h2>
+        <h1>Michael&#8209;Paul Cuccia</h1>
+        <h2>Full&nbsp;Stack&nbsp;Developer</h2>
         <h4>Austin, Texas</h4>
         <br />
-        <h4>Former Paralegal Specialist (US Department of Justice)</h4>
+        <h4>
+          Former Paralegal Specialist <br className="showMobile" />
+          (US Department of Justice)
+        </h4>
         <h4>United States Army Veteran</h4>
         <LinksFlex>
           <IconWithLinkContainer>
