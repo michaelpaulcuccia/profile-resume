@@ -5,17 +5,22 @@ import ThemeContext from "../src/app/context/ThemeContext";
 import CustomLink from "./CustomLink";
 import { lightMode, darkMode } from "../constants/palette";
 import PillButton from "./Pillbutton";
+import { Title, Headline } from "./CustomText";
 
 const Util = styled.div`
   padding: 16px;
   display: flex;
   justify-content: flex-end;
 
-  .add-pad {
+  .self {
+    flex: 1;
+  }
+
+ .add-pad {
     padding-left: 30px;
   }
 
-  :nth-child(3) {
+  :nth-child(4) {
     padding-right: 45px;
   }
 `;
@@ -26,20 +31,20 @@ const Hero = styled.div`
   background-color: ${({ theme }) =>
     theme === "lightMode" ? lightMode.Background : darkMode.Background};
   padding-left: 18px;
-  -webkit-font-smoothing: antialiased;
 
   .title {
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 20px;
   }
 
   .headline {
-    font-size: 24px;
     margin-bottom: 40px;
   }
 
+  //Special Use, not included in CustomText
   .body {
     line-height: 18px;
+    margin-bottom: 60px;
     color: ${({ theme }) =>
     theme === "lightMode" ? lightMode.Secondary : darkMode.Secondary};
   }
@@ -52,18 +57,19 @@ export default function Nav() {
   return (
     <>
     <Util>
-      <CustomLink className="add-pad" href='/work'>work</CustomLink>
-      <CustomLink className="add-pad" href='/code'>code</CustomLink>
-      <CustomLink className="add-pad" href='/play'>play</CustomLink>
+        <CustomLink className='self' href='/'>home</CustomLink>
+        <CustomLink className="add-pad" href='/work'>work</CustomLink>
+        <CustomLink className="add-pad" href='/code'>code</CustomLink>
+        <CustomLink className="add-pad" href='/play'>play</CustomLink>
       <div>
         <PillButton />
       </div>
     </Util>
     <Hero theme={theme}>
-      <h1 className="title">Michael-Paul Cuccia.</h1>
-      <p className="headline">
+      <Title className="title">Michael-Paul Cuccia.</Title>
+      <Headline className="headline">
         website fabrication. application construction. brand amplification.
-      </p>
+      </Headline>
       <p className="body">
         As an expert in user-centric design and responsive development, I create
         <br />

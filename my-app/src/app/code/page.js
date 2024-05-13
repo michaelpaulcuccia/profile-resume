@@ -1,7 +1,9 @@
-import React from 'react'
+"use client";
+import React from 'react';
+import PageWrapper from '../../../components/PageWrapper';
 
 export default function page() {
   return (
-    <div>code</div>
+    <PageWrapper>code</PageWrapper>
   )
 }

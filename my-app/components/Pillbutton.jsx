@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
 
-  h4 {
+  p {
     margin-left: 6px;
   }
 `;
@@ -70,7 +70,7 @@ const PillButton = () => {
           <Circle toggled={toggled} theme={theme} />
         </Button>
       </ButtonContainer>
-      <>{!toggled ? <h4>light mode</h4> : <h4>dark mode</h4>}</>
+      <>{!toggled ? <p>light mode</p> : <p>dark mode</p>}</>
     </Wrapper>
   );
 };
