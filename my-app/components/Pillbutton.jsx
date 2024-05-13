@@ -3,13 +3,23 @@ import React, { useState, useContext, useEffect } from "react";
 import ThemeContext from "@/app/context/ThemeContext";
 import styled from "styled-components";
 import { lightMode, darkMode } from "../constants/palette";
+import { mobileBreakpoint } from "../constants/breakpoint";
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
 
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   p {
     margin-left: 6px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      margin-left: 0;
+    }
   }
 `;
 
@@ -70,7 +80,7 @@ const PillButton = () => {
           <Circle toggled={toggled} theme={theme} />
         </Button>
       </ButtonContainer>
-      <>{!toggled ? <p>light mode</p> : <p>dark mode</p>}</>
+      <>{!toggled ? <p>light</p> : <p>dark</p>}</>
     </Wrapper>
   );
 };

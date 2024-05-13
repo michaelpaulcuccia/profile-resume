@@ -6,22 +6,40 @@ import CustomLink from "./CustomLink";
 import { lightMode, darkMode } from "../constants/palette";
 import PillButton from "./Pillbutton";
 import { Title, Headline } from "./CustomText";
+import { mobileBreakpoint } from "../constants/breakpoint";
 
 const Util = styled.div`
   padding: 16px;
   display: flex;
   justify-content: flex-end;
 
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .self {
     flex: 1;
+    @media (max-width: ${mobileBreakpoint}) {
+      padding-bottom: 4px;
+    }
   }
 
  .add-pad {
     padding-left: 30px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      padding-bottom: 4px;
+    }
   }
 
   :nth-child(4) {
     padding-right: 45px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      padding-right: 0;
+      padding-bottom: 12px;
+    }
   }
 `;
 
