@@ -1,5 +1,7 @@
 "use client";
 import React, { useContext } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import styled from "styled-components";
 import ThemeContext from "../src/app/context/ThemeContext";
 import CustomLink from "./CustomLink";
@@ -7,6 +9,8 @@ import { lightMode, darkMode } from "../constants/palette";
 import PillButton from "./Pillbutton";
 import { Title, Headline } from "./CustomText";
 import { mobileBreakpoint } from "../constants/breakpoint";
+import GitHub from '../public/assets/GitHub.png';
+import LinkedIn from "../public/assets/LinkedIn.jpeg";
 
 const Util = styled.div`
   padding: 16px;
@@ -62,9 +66,21 @@ const Hero = styled.div`
   //Special Use, not included in CustomText
   .body {
     line-height: 18px;
-    margin-bottom: 60px;
     color: ${({ theme }) =>
     theme === "lightMode" ? lightMode.Secondary : darkMode.Secondary};
+  }
+`;
+
+const IconWithLinkContainer = styled.div`
+  margin-bottom: 60px;
+  margin-top: 20px;
+
+  a:first-of-type {
+    margin-right: 6px;
+  }
+  
+  a:nth-of-type(2) {
+    margin-left: 6px;
   }
 `;
 
@@ -89,11 +105,35 @@ export default function Nav() {
         website fabrication. application construction. brand amplification.
       </Headline>
       <p className="body">
-        As an expert in user-centric design and responsive development, I create
-        <br />
-        engaging online platforms that empower clients to connect with their
-        audiences effortlessly.
+        I create engaging online platforms that empower clients to make effortless connections with their
+        audience.
       </p>
+      <IconWithLinkContainer>
+        <Link
+          href="https://www.linkedin.com/in/michael-paul-cuccia-882607275/"
+          target="_blank"
+        >
+         <Image
+          src={LinkedIn}
+          width={40}
+          height={40}
+          alt="LinkedIn"
+          style={{ borderRadius: "12px" }}
+        />
+        </Link>
+        <Link
+          href="https://github.com/michaelpaulcuccia/"
+          target="_blank"
+        >
+         <Image
+          src={GitHub}
+          width={40}
+          height={40}
+          alt="GitHub"
+          style={{ borderRadius: "12px" }}
+        />
+        </Link>
+      </IconWithLinkContainer>
     </Hero>
     </>
   );

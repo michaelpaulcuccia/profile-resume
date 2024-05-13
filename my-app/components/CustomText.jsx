@@ -27,6 +27,10 @@ const StyledHeadline = styled.p`
 
 const StyledPillContainer = styled.div`
   width: 50%;
+  
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 100%;
+  }
 `;
 
 export function TextContainer ({children}) {

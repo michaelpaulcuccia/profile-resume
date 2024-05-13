@@ -83,15 +83,32 @@ export default function page() {
         <Headline>US Attorney's Office</Headline>
         <Paragraph>September 2004 - January 2019</Paragraph>
         <div style={{ marginBottom: '18px'}}></div>
-        <Paragraph>I joined the US Attorney's Office as a Legal Assistant and was assigned to the Criminal Division.</Paragraph>
+        <Paragraph>
+          I joined the US Attorney's Office as a Legal Assistant and was assigned to the Criminal Division. I was promoted to Paralegal Specialist in April 2007.
+        </Paragraph>
+        <Paragraph>
+          As a Paralegal, I participated in over 30 Federal Trials, hundreds of Grand Jury investigations, and thousands of criminal proceedings. 
+        </Paragraph>
+        <Paragraph>
+          After almost twenty years of government service, I decided to resign following the Government Shutdown on 2018 and pursue a new career option. 
+        </Paragraph>
       </TextContainer>
       <div style={{ marginBottom: '30px'}}></div>
       <TextContainer>
         <Headline>US Army</Headline>
         <Paragraph>August 2001 - June 2003</Paragraph>
         <div style={{ marginBottom: '18px'}}></div>
-        <Paragraph>..............</Paragraph>
+        <Paragraph>
+          My military career began at Fort Jackson, South Carolina where I attended Basic Combat Training and Advanced Individual Training for Personnel Services.
+        </Paragraph>
+        <Paragraph>
+          I was assigned to the Headquarters Company of the 1st Armored Division in Weisbaden, Germany. My position was to conduct Line of Duty Investigations to ensure soldiers, and their families recieved benefits. I was also assigned as Congressional Liason for all inquries requested from the various offices of the United States Government. 
+        </Paragraph>
+        <Paragraph>
+          I recieved an Honorable Discharge.
+        </Paragraph>
       </TextContainer>
+      <div style={{ marginBottom: '60px'}}></div>
     </PageWrapper>
   )
 }
