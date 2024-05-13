@@ -14,7 +14,19 @@ export default function page() {
         <Headline>designory</Headline>
         <Paragraph>April 2001 - July 2024</Paragraph>
         <div style={{ marginBottom: '18px'}}></div>
-        <Paragraph>...</Paragraph>
+        <Paragraph>
+          I was hired by designory in April 2021 as a contract employee. In August 2021, I was offered a full-time position as a Junior Engineer. That role would grow to Junior Engineer II and then to Engineer by May 2023.
+        </Paragraph>
+        <Paragraph>
+          At designory, the majority of my work was for a Pharmacuetical client. I worked on updating, maintaining, and building two dozen websites. These sites were composed of a variety of design systems, technologies, and methodologies. Workstreams were managed through complex branching systems and sandboxes were deployed manually on a custom secure server.
+        </Paragraph>
+        <Paragraph>
+          In addition to Pharma work, I had been tasked to assist other clients with WebGL, CMS, and many quick-turnaround "microsites".  
+        </Paragraph>
+        <Paragraph>
+          I had an incredible experience working at designory. I worked with a wonderful team, got to be a part of amazing work, and felt incredible pride in the quality we provided our client. Feel free to inquire about references.
+        </Paragraph>
+        <div style={{ marginBottom: '24px'}}></div>
         <PillContainer>
           {
             designoryTech.map((item, i) => (
@@ -28,7 +40,14 @@ export default function page() {
         <Headline>Xogene (Internship)</Headline>
         <Paragraph>June 2020 - Oct 2020</Paragraph>
         <div style={{ marginBottom: '18px'}}></div>
-        <Paragraph>...</Paragraph>
+        <div style={{ marginBottom: '24px'}}></div>
+        <Paragraph>
+          I was hired as a paid Intern for Xogene and tasked to provide a stand-alone tool to manage specific clinical trial data.
+        </Paragraph>
+        <Paragraph>
+          This was an exellent experience, benificial to both me and the company. I was able to successfully provide a prototype application and implement a process to handle data effectively. 
+        </Paragraph>
+        <div style={{ marginBottom: '24px'}}></div>
         <PillContainer>
           {
             xogeneTech.map((item, i) => (
@@ -43,7 +62,14 @@ export default function page() {
         <Headline>Rutgers Coding Bootcamp</Headline>
         <Paragraph>September 2019 - December 2019</Paragraph>
         <div style={{ marginBottom: '18px'}}></div>
-        <Paragraph>...</Paragraph>
+        <div style={{ marginBottom: '24px'}}></div>
+        <Paragraph>
+          Following my deciscion to leave public service I enrolled in Rutgers Coding Bootcamp. This was a 12-week, full-time, in-person program.
+        </Paragraph>
+        <Paragraph>
+          This course introduced me to the fundamentals of web programming through HTML, CSS, and JavaScript and then moved into more complex aspects such as backend development with Node.js, API's, and databases. The course briefly spent time on jQuery and Express-Handlebars before moving into React development.
+        </Paragraph>
+        <div style={{ marginBottom: '24px'}}></div>
         <PillContainer>
           {
             rutgersTech.map((item, i) => (
