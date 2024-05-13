@@ -19,3 +19,21 @@ export const designoryTech = [
     'JavaScript',
     'HTML & CSS'
 ];
+
+export const rutgersTech = [
+    'JavaScript',
+    'HTML & CSS',
+    'jQuery',
+    'Bootstrap',
+    'Git',
+    'Express',
+    'Node.js',
+    'API',
+    'SQL',
+    'NoSQL',
+    'MongoDB',
+    'MySQL',
+    'PostgreSQL',
+    'Heroku',
+    'React'
+];
