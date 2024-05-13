@@ -5,10 +5,9 @@ import styled from "styled-components";
 import { lightMode, darkMode } from "../constants/palette";
 
 const Background = styled.div`
-  width: 100vw;
-  height: 100vh;
   background-color: ${({ theme }) =>
     theme === "lightMode" ? lightMode.Background : darkMode.Background};
+  min-height: 100vh;
 `;
 
 const Root = styled.div`
