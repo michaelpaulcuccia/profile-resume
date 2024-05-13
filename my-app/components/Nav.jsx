@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import ThemeContext from "../src/app/context/ThemeContext";
+import CustomLink from "./CustomLink";
 import { lightMode, darkMode } from "../constants/palette";
 import PillButton from "./Pillbutton";
 
@@ -51,9 +52,9 @@ export default function Nav() {
   return (
     <>
     <Util>
-      <div className="add-pad">work</div>
-      <div className="add-pad">code</div>
-      <div className="add-pad">play</div>
+      <CustomLink className="add-pad" href='/work'>work</CustomLink>
+      <CustomLink className="add-pad" href='/code'>code</CustomLink>
+      <CustomLink className="add-pad" href='/play'>play</CustomLink>
       <div>
         <PillButton />
       </div>
