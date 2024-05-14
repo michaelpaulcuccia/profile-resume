@@ -51,8 +51,8 @@ export const clinicalTrialsTech = [
     'Vercel'
 ];
 
-export const profileTech = [
-    'Next.js',
+export const bjjTech = [
+    'Gatsby.js',
     'Styled-Components',
     'Vercel'
 ];

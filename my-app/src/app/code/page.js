@@ -6,10 +6,10 @@ import Image from 'next/image';
 import CustomLink from '../../../components/CustomLink';
 import { TextContainer, Title, Paragraph, PillContainer } from '../../../components/CustomText';
 import Pill from '../../../components/Pill';
-import { eliquisTech, clinicalTrialsTech, profileTech } from '../../../constants/technologies';
+import { eliquisTech, clinicalTrialsTech, bjjTech } from '../../../constants/technologies';
 import Eliquis from '../../../public/assets/eliquis.png';
 import ClinicalTrials from '../../../public/assets/clinical-trials.png';
-import Profile from '../../../public/assets/profile.png';
+import BJJ from '../../../public/assets/BJJ.png';
 
 const Box = styled.div`
   display: flex;
@@ -29,6 +29,31 @@ export default function page() {
   return (
     <PageWrapper>
       <TextContainer>
+      {/* <Box>
+          <div className='image-container'>
+            <Image
+              src={XXX}
+              width={150}
+              height={75}
+              alt="XXX"
+            />
+          </div>
+          <div className='content-container'>
+            <CustomLink href='XXX' target="_blank">
+              <Title>Tremolo</Title>
+            </CustomLink>
+            <div style={{ marginBottom: '12px'}}></div>
+              <Paragraph>In progress...</Paragraph>
+              <div style={{ marginBottom: '18px'}}></div>
+              <StyledPillContainer>
+                {
+                  XXX.map((item, i) => (
+                    <Pill key={i}>{item}</Pill>
+                  ))
+                }
+              </StyledPillContainer>
+          </div>
+        </Box> */}
         <Box>
           <div className='image-container'>
             <Image
@@ -82,22 +107,22 @@ export default function page() {
         <Box>
           <div className='image-container'>
             <Image
-              src={Profile}
+              src={BJJ}
               width={150}
               height={75}
-              alt="Profile Resume"
+              alt="BJJ"
             />
           </div>
           <div className='content-container'>
-            <CustomLink href='https://profile-resume-tawny.vercel.app/' target="_blank">
-              <Title>Profile-Resume</Title>
+            <CustomLink href='https://bjjd-esign-system-9shxpknrh-michaelpaulcuccia.vercel.app/' target="_blank">
+              <Title>Brazilian Jiu Jitsu Design System</Title>
             </CustomLink>
             <div style={{ marginBottom: '12px'}}></div>
-              <Paragraph>See the code behind this site!</Paragraph>
+              <Paragraph>A template for a website that would provide information on various Brazilian Jiu Jitsu positions, attacks/defenses, and terminology</Paragraph>
               <div style={{ marginBottom: '18px'}}></div>
               <StyledPillContainer>
                 {
-                  profileTech.map((item, i) => (
+                  bjjTech.map((item, i) => (
                     <Pill key={i}>{item}</Pill>
                   ))
                 }
