@@ -15,16 +15,16 @@ export default function page() {
         <Paragraph>April 2001 - July 2024</Paragraph>
         <div style={{ marginBottom: '18px'}}></div>
         <Paragraph>
-          I was hired by designory in April 2021 as a contract employee. In August 2021, I was offered a full-time position as a Junior Engineer. That role would grow to Junior Engineer II and then to Engineer by May 2023.
+          I was hired by designory in April 2021 as a contract employee. In August 2021, I was offered a full-time position as a Junior Engineer. Not long after, that role evolved into Junior Engineer II and then to Engineer by May 2023.
         </Paragraph>
         <Paragraph>
-          At designory, the majority of my work was for a Pharmacuetical client. I worked on updating, maintaining, and building two dozen websites. These sites were composed of a variety of design systems, technologies, and methodologies. Workstreams were managed through complex branching systems and sandboxes were deployed manually on a custom secure server.
+          At designory, the majority of my work was for a Pharmacuetical client. I worked on building, updating, and maintaining nearly two dozen websites. These sites were composed of a variety of design systems, technologies, and methodologies. Workstreams were managed through complex branching systems and sandboxes were deployed manually on a custom secure server, as were necessary for client and regulatory demands.
         </Paragraph>
         <Paragraph>
           In addition to Pharma work, I had been tasked to assist other clients with WebGL, CMS, and many quick-turnaround "microsites".  
         </Paragraph>
         <Paragraph>
-          I had an incredible experience working at designory. I worked with a wonderful team, got to be a part of amazing work, and felt incredible pride in the quality we provided our client. Feel free to inquire about references.
+          I had an incredible experience working at designory. I worked with a wonderful team, got to be a part of amazing work, and always took incredible pride in the quality we provided our client. Feel free to inquire about references.
         </Paragraph>
         <div style={{ marginBottom: '24px'}}></div>
         <PillContainer>
@@ -42,10 +42,7 @@ export default function page() {
         <div style={{ marginBottom: '18px'}}></div>
         <div style={{ marginBottom: '24px'}}></div>
         <Paragraph>
-          I was hired as a paid Intern for Xogene and tasked to provide a stand-alone tool to manage specific clinical trial data.
-        </Paragraph>
-        <Paragraph>
-          This was an exellent experience, benificial to both me and the company. I was able to successfully provide a prototype application and implement a process to handle data effectively. 
+          I was offered a short-term paid contract with Xogene to contribute to the development of a standalone tool for managing specific clinical trial data. This experience was mutually beneficial, resulting in the successful creation of a prototype application.
         </Paragraph>
         <div style={{ marginBottom: '24px'}}></div>
         <PillContainer>
@@ -64,10 +61,10 @@ export default function page() {
         <div style={{ marginBottom: '18px'}}></div>
         <div style={{ marginBottom: '24px'}}></div>
         <Paragraph>
-          Following my deciscion to leave public service I enrolled in Rutgers Coding Bootcamp. This was a 12-week, full-time, in-person program.
+          Following my deciscion to leave public service I enrolled in Rutgers Coding Bootcamp. This was a 12-week, full-time, in-person program at their Somerset, NJ campus.
         </Paragraph>
         <Paragraph>
-          This course introduced me to the fundamentals of web programming through HTML, CSS, and JavaScript and then moved into more complex aspects such as backend development with Node.js, API's, and databases. The course briefly spent time on jQuery and Express-Handlebars before moving into React development.
+          This course introduced me to the fundamentals of web programming through HTML, CSS, and JavaScript and then moved into more complex aspects such as backend development with Node.js, API's, and databases such as MySQL and MongoDB. The program also covered jQuery and Express-Handlebars before moving into React development.
         </Paragraph>
         <div style={{ marginBottom: '24px'}}></div>
         <PillContainer>
@@ -102,7 +99,7 @@ export default function page() {
           My military career began at Fort Jackson, South Carolina where I attended Basic Combat Training and Advanced Individual Training for Personnel Services.
         </Paragraph>
         <Paragraph>
-          I was assigned to the Headquarters Company of the 1st Armored Division in Weisbaden, Germany. My position was to conduct Line of Duty Investigations to ensure soldiers, and their families recieved benefits. I was also assigned as Congressional Liason for all inquries requested from the various offices of the United States Government. 
+          I was assigned to the Headquarters Company of the 1st Armored Division in Weisbaden, Germany. My job was to conduct Line of Duty Investigations to ensure soldiers, and their families recieved benefits. I was also assigned as Congressional Liason for all inquries requested from the various offices of the United States Government. 
         </Paragraph>
         <Paragraph>
           I recieved an Honorable Discharge.
