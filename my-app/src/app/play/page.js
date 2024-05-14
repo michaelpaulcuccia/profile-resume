@@ -19,20 +19,20 @@ export default function page() {
           style={{ borderRadius: "12px" }}
         />
         <div style={{ marginBottom: '20px'}}></div>
-        <p>I live in Austin, Texas with my wife, our son, daughter, and two coonhounds.</p>
+        <p>I live in Austin, Texas with my wife, son, daughter, and our two coonhounds.</p>
       </TextContainer>
       <div style={{ marginBottom: '45px'}}></div>
       <TextContainer>
         <Title>interests</Title>
         <div style={{ marginBottom: '20px'}}></div>
         <Paragraph>
-          I try to get outside as much as possible. Living in the Texas Hill Country and being surrounded by such amazing nature is a blessing. I am also a Rock/Ice climber and skier, and have had many incredible mountain experiences.
+          I try to get outside as much as possible. Living in the Texas Hill Country and being surrounded by such amazing nature is such a blessing. In addition to hiking, I am a rock/ice climber and skier, and have had many incredible mountain experiences.
         </Paragraph>
         <Paragraph>
           I have been training Brazilian Jiu Jitsu since 2007. The art and lifestyle of Jiu Jitsu, along with people I train with, are a huge part of my life. 
         </Paragraph>
         <Paragraph>
-          I have been playing Bass Guitar for a few years and have made it a goal to be good enough to eventually play with a live band. I also play a little bit of acoustic six-string too.
+          I have been playing Bass Guitar for a few years and have made it a goal to be good enough to eventually play with a live band. I also play a bit of six-string too.
         </Paragraph>
       </TextContainer>
     </PageWrapper>

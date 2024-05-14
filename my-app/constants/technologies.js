@@ -47,5 +47,12 @@ export const eliquisTech = [
 export const clinicalTrialsTech = [
     'Gatsby.js',
     'Styled-Components', 
-    'API'
+    'API',
+    'Vercel'
+];
+
+export const profileTech = [
+    'Next.js',
+    'Styled-Components',
+    'Vercel'
 ];
