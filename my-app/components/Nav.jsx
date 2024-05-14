@@ -73,7 +73,7 @@ const Hero = styled.div`
 
 const IconWithLinkContainer = styled.div`
   margin-bottom: 60px;
-  margin-top: 20px;
+  margin-top: 30px;
 
   a:first-of-type {
     margin-right: 6px;
@@ -102,7 +102,7 @@ export default function Nav() {
     <Hero theme={theme}>
       <Title className="title">Michael-Paul Cuccia.</Title>
       <Headline className="headline">
-        website fabrication. application construction. brand amplification.
+        website and application development. former paralegal. army veteran.
       </Headline>
       <p className="body">
         I create engaging online platforms that empower clients to make effortless connections with their
