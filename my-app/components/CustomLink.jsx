@@ -7,12 +7,22 @@ const Item = styled(Link)`
     color: inherit;
 
     &:hover {
-        font-weight: bold;
+      font-weight: bold;
     }
 `;
 
-export default function CustomLink({href, children, className}) {
+export default function CustomLink({href, children, target, className}) {
   return (
-    <Item href={href} className={className}>{children}</Item>
+    <Item 
+      href={href} 
+      className={className}
+      target={target}
+    >
+      {children}
+    </Item>
   )
+}
+
+CustomLink.defaultProps = {
+  target: '_self'
 }

@@ -37,3 +37,15 @@ export const rutgersTech = [
     'Heroku',
     'React'
 ];
+
+export const eliquisTech = [
+    'Next.js',
+    'Styled-Components',
+    'Vercel'
+];
+
+export const clinicalTrialsTech = [
+    'Gatsby.js',
+    'Styled-Components', 
+    'API'
+];
