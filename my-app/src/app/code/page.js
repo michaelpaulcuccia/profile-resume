@@ -93,7 +93,7 @@ export default function page() {
               <Title>Clinical Trials</Title>
             </CustomLink>
             <div style={{ marginBottom: '12px'}}></div>
-              <Paragraph>This project accesses data in publicly available in clinicaltrials.gov. It allows users to search for studies with through a text field and provides a detailed response.</Paragraph>
+              <Paragraph>This project accesses data publicly available at clinicaltrials.gov. It allows users to search for studies with through a text field and provides a detailed response.</Paragraph>
               <div style={{ marginBottom: '18px'}}></div>
               <StyledPillContainer>
                 {
