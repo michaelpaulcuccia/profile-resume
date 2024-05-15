@@ -1,5 +1,6 @@
 export const xogeneTech = [
     'React',
+    'Redux',
     'AG Grid',
     'Bootstrap',
     'Firebase',
@@ -9,6 +10,7 @@ export const xogeneTech = [
 
 export const designoryTech = [
     'React',
+    'Redux',
     'Next.js',
     'Gatsby.js',
     'Storybook',
@@ -56,3 +58,28 @@ export const bjjTech = [
     'Styled-Components',
     'Vercel'
 ];
+
+export const sellersmarketTech = [
+    'React',
+    'React-Router-DOM',
+    'Redux',
+    'Node.js',
+    'Express',
+    'Bcrypt.js',
+    'Mongoose',
+    'MongoDB',
+    'PayPal',
+];
+
+export const bjjtrackerTech = [
+    'React',
+    'React-DOM',
+    'AG Grid',
+    'Node.js',
+    'Axios',
+    'Express',
+    'Bootstrap',
+    'Moment.js',
+    'Mongoose',
+    'MongoDB',
+]
