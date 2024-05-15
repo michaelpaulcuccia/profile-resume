@@ -80,7 +80,7 @@ const PillButton = () => {
           <Circle toggled={toggled} theme={theme} />
         </Button>
       </ButtonContainer>
-      <>{!toggled ? <p>light</p> : <p>dark</p>}</>
+      <>{!toggled ? <p>dark</p> : <p>light</p>}</>
     </Wrapper>
   );
 };
