@@ -1,23 +1,35 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import styled from 'styled-components';
 import PageWrapper from '../../../components/PageWrapper';
 import { TextContainer, Title, Paragraph } from '../../../components/CustomText';
+import { mobileBreakpoint } from '../../../constants/breakpoint';
 import MPC from '../../../public/assets/mpc.png';
+
+const HeroImageContainer = styled.div`
+  margin-top: 20px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export default function page() {
   return (
     <PageWrapper>
       <TextContainer>
         <Title>about me</Title>
-        <div style={{ marginBottom: '20px'}}></div>
+        <HeroImageContainer>
           <Image
-          src={MPC}
-          width={275}
-          height={275}
-          alt="Michael-Paul Cuccia"
-          style={{ borderRadius: "12px" }}
-        />
+            src={MPC}
+            width={275}
+            height={275}
+            alt="Michael-Paul Cuccia"
+            style={{ borderRadius: "12px" }}
+          />
+        </HeroImageContainer>
         <div style={{ marginBottom: '20px'}}></div>
         <p>I live in Austin, Texas with my wife, son, daughter, and our two coonhounds.</p>
       </TextContainer>
