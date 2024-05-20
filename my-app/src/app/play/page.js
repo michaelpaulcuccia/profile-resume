@@ -41,7 +41,7 @@ export default function page() {
           I try to get outside as much as possible. Living in the Texas Hill Country and being surrounded by such amazing nature is such a blessing. In addition to hiking, I am a rock/ice climber and skier, and have had many incredible mountain experiences.
         </Paragraph>
         <Paragraph>
-          I have been training Brazilian Jiu Jitsu since 2007. The art and lifestyle of Jiu Jitsu, along with people I train with, are a huge part of my life. 
+          Im 2007 I began training Brazilian Jiu Jitsu. The art and lifestyle of Jiu Jitsu, along with people I train with, are a huge part of my life. 
         </Paragraph>
         <Paragraph>
           I have been playing Bass Guitar for a few years and have made it a goal to be good enough to eventually play with a live band. I also play a bit of six-string too.

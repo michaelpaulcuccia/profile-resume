@@ -5,19 +5,30 @@ import PageWrapper from '../../../components/PageWrapper';
 import Image from 'next/image';
 import CustomLink from '../../../components/CustomLink';
 import { TextContainer, Title, Paragraph, PillContainer, Headline } from '../../../components/CustomText';
+import { mobileBreakpoint } from '../../../constants/breakpoint';
 import Pill from '../../../components/Pill';
-import { eliquisTech, clinicalTrialsTech, bjjTech, sellersmarketTech, bjjtrackerTech } from '../../../constants/technologies';
+import { eliquisTech, clinicalTrialsTech, bjjTech, sellersmarketTech, bjjtrackerTech, tremoloTech } from '../../../constants/technologies';
 import Eliquis from '../../../public/assets/eliquis.png';
 import ClinicalTrials from '../../../public/assets/clinical-trials.png';
 import BJJ from '../../../public/assets/BJJ.png';
+import Tremelo from '../../../public/assets/Tremelo.png';
 
 const Box = styled.div`
   display: flex;
   max-width: 60%;
   margin-bottom: 40px;
 
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
   .image-container {
     margin-right: 24px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      margin: 0 auto 18px;
+    }
   }
 `;
 
@@ -25,9 +36,17 @@ const HerokuBox = styled.div`
   display: flex;
   margin-bottom: 40px;
 
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+  }
+
   .text-side {
     width: 60%;
     margin-right: 8px;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      width: 100%;
+    }
   }
 `;
 
@@ -37,6 +56,11 @@ const StyledPillContainer = styled(PillContainer)`
 
 const HerokuPillContainer = styled(PillContainer)`
   width: 40%;
+
+    @media (max-width: ${mobileBreakpoint}) {
+      width: 100%;
+      margin-top: 12px;
+    }
 `;
 
 export default function page() {
@@ -47,24 +71,27 @@ export default function page() {
           <Box>
             <div className='image-container'>
               <Image
-                src={Eliquis}
+                src={Tremelo}
                 width={150}
                 height={75}
                 alt="..."
               />
             </div>
-            <div className='content-container'>
+            <div>
               <CustomLink href='/' target="_blank">
                   <Title>Tremelo</Title>
               </CustomLink>
             <div style={{ marginBottom: '12px'}}></div>
                 <Paragraph>
-                  ...
+                  In progress...
+                </Paragraph>
+                <Paragraph>
+                  This application is my version of "Reverb", an online marketplace for buying and selling new, used, and vintage musical instruments. 
                 </Paragraph>
                 <div style={{ marginBottom: '18px'}}></div>
                   <StyledPillContainer>
                     {
-                      eliquisTech.map((item, i) => (
+                      tremoloTech.map((item, i) => (
                         <Pill key={i}>{item}</Pill>
                       ))
                     }
@@ -80,7 +107,7 @@ export default function page() {
                 alt="Eliquis"
               />
             </div>
-            <div className='content-container'>
+            <div>
               <CustomLink href='https://eliquis-rebuild.vercel.app/' target="_blank">
                   <Title>Eliquis Rebuild</Title>
               </CustomLink>
@@ -107,7 +134,7 @@ export default function page() {
                 alt="Clinical Trials"
               />
               </div>
-             <div className='content-container'>
+             <div>
                 <CustomLink href='https://clinicaltrialsgatsby.vercel.app/' target="_blank">
                   <Title>Clinical Trials</Title>
                 </CustomLink>
@@ -134,7 +161,7 @@ export default function page() {
                 alt="BJJ"
                 />
             </div>
-            <div className='content-container'>
+            <div>
                 <CustomLink href='https://bjjd-esign-system-9shxpknrh-michaelpaulcuccia.vercel.app/' target="_blank">
                     <Title>Brazilian Jiu Jitsu Design System</Title>
                 </CustomLink>

@@ -13,7 +13,7 @@ export default function page() {
           In July 2024, I will be actively seeking a new role.
         </Paragraph>
         <Paragraph>
-          My time with designory will be ending after three successful years of building websites for one of world's largest pharmacuetical companies, and for one of the most profitable cancer drugs on the market. Sadly, that client will be consolidating agencies and I will be included in staff reductions.
+          My time with designory will be ending after three successful years of building websites for one of world's largest pharmaceutical companies, and for one of the most profitable cancer drugs on the market. Sadly, that client will be consolidating agencies and I will be included in staff reductions.
         </Paragraph>
         <div style={{ marginBottom: '40px'}}></div>
         <Paragraph>

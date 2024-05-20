@@ -84,9 +84,6 @@ const IconWithLinkContainer = styled.div`
     margin-left: 6px;
   }
 
-  a:nth-of-type(2) {
-    margin-right: 8px;
-  }
 `;
 
 export default function Nav() {
@@ -135,18 +132,6 @@ export default function Nav() {
           width={40}
           height={40}
           alt="GitHub"
-          style={{ borderRadius: "12px" }}
-        />
-        </Link>
-        <Link
-          href="https://bsky.app/profile/youdontknowmebro.bsky.social/"
-          target="_blank"
-        >
-         <Image
-          src={Bluesky}
-          width={40}
-          height={40}
-          alt="Bluesky"
           style={{ borderRadius: "12px" }}
         />
         </Link>

@@ -18,7 +18,7 @@ export default function page() {
           I was hired by designory in April 2021 as a contract employee. In August 2021, I was offered a full-time position as a Junior Engineer. Not long after, that role evolved into Junior Engineer II and then to Engineer by May 2023.
         </Paragraph>
         <Paragraph>
-          At designory, the majority of my work was for a Pharmacuetical client. I worked on building, updating, and maintaining nearly two dozen websites. These sites were composed of a variety of design systems, technologies, and methodologies. Workstreams were managed through complex branching systems and sandboxes were deployed manually on a custom secure server, as were necessary for client and regulatory demands.
+          At designory, the majority of my work was for a pharmaceutical client. I worked on building, updating, and maintaining nearly two dozen websites. These sites were composed of a variety of design systems, technologies, and methodologies. Workstreams were managed through complex branching systems and sandboxes were deployed manually on a custom secure server, as were necessary for client and regulatory demands.
         </Paragraph>
         <Paragraph>
           In addition to Pharma work, I had been tasked to assist other clients with WebGL, CMS, and many quick-turnaround "microsites".  

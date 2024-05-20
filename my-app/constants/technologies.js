@@ -82,4 +82,15 @@ export const bjjtrackerTech = [
     'Moment.js',
     'Mongoose',
     'MongoDB',
+];
+
+export const tremoloTech = [
+    'Next.js',
+    'Styled-Components',
+    'Mongoose',
+    'MongoDB',
+    'Cloudinary',
+    'API',
+    'Authentication',
+    'Vercel',
 ]
