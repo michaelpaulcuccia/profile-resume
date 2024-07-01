@@ -51,12 +51,13 @@ export default function page() {
           skier, and have had many incredible mountain experiences.
         </Paragraph>
         <Paragraph>
-          Im 2007 I began training Brazilian Jiu Jitsu. The art and lifestyle of
-          Jiu Jitsu along with people I train with are a huge part of my life.
+          In 2007 I began training Brazilian Jiu Jitsu. The art and lifestyle of
+          Jiu Jitsu along with people I train with are a huge part of my life. I
+          am currently a member of Team Renzo Gracie Lakeway.
         </Paragraph>
         <Paragraph>
-          goal to be good enough to eventually play with a live band. I also
-          play a bit of six-string too.
+          I play bass guitar and a little a bit of six-string too. My goal is to
+          eventually be good enough to play bass in a local cover band.
         </Paragraph>
       </TextContainer>
     </PageWrapper>
