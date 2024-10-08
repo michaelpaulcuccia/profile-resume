@@ -29,6 +29,7 @@ const Hero = styled.div`
   //Special Use, not included in CustomText
   .body {
     line-height: 18px;
+    padding-right: 12px;
     color: ${({ theme }) =>
       theme === "lightMode" ? darkMode.Secondary : lightMode.Secondary};
   }

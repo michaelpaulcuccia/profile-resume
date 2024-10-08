@@ -76,4 +76,5 @@ export const recentAssessment = [
   "CSS Animations/Keyframes",
   "Cookies",
   "Accessibility",
+  "Vercel",
 ];

@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { mobileBreakpoint } from '../constants/breakpoint';
+import React from "react";
+import styled from "styled-components";
+import { mobileBreakpoint } from "../constants/breakpoint";
 
 const StyledTextContainer = styled.div`
   width: 70%;
@@ -26,40 +26,27 @@ const StyledHeadline = styled.p`
 `;
 
 const StyledPillContainer = styled.div`
-  width: 50%;
-  
-  @media (max-width: ${mobileBreakpoint}) {
-    width: 100%;
-  }
+  width: 100%;
 `;
 
-export function TextContainer ({children}) {
-  return (
-    <StyledTextContainer>{children}</StyledTextContainer>
-  )
+export function TextContainer({ children }) {
+  return <StyledTextContainer>{children}</StyledTextContainer>;
 }
 
-export function Paragraph ({children}) {
-  return (
-    <StyledParagraph>{children}</StyledParagraph>
-  )
+export function Paragraph({ children }) {
+  return <StyledParagraph>{children}</StyledParagraph>;
 }
 
-export function Title ({children, className}) {
-  return (
-    <StyledTitle className={className}>{children}</StyledTitle>
-  )
+export function Title({ children, className }) {
+  return <StyledTitle className={className}>{children}</StyledTitle>;
 }
 
-export function Headline ({children, className}) {
-  return (
-    <StyledHeadline className={className}>{children}</StyledHeadline>
-  )
+export function Headline({ children, className }) {
+  return <StyledHeadline className={className}>{children}</StyledHeadline>;
 }
 
-export function PillContainer ({children, className}) {
+export function PillContainer({ children, className }) {
   return (
     <StyledPillContainer className={className}>{children}</StyledPillContainer>
-  )
+  );
 }
-

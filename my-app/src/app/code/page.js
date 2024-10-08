@@ -4,7 +4,6 @@ import styled from "styled-components";
 import PageWrapper from "../../../components/PageWrapper";
 import Image from "next/image";
 import CustomLink from "../../../components/CustomLink";
-import { lightMode, darkMode } from "../../../constants/palette";
 import {
   TextContainer,
   Title,
@@ -38,15 +37,21 @@ const Box = styled.div`
 
   .image-container {
     margin-right: 32px;
+    width: 200px;
+    height: 100px;
+    flex-shrink: 0;
 
     @media (max-width: ${mobileBreakpoint}) {
+      width: 100%;
+      height: auto;
       margin: 0 auto 18px;
     }
   }
-`;
 
-const StyledPillContainer = styled(PillContainer)`
-  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const StyledTitle = styled(Title)`
@@ -95,11 +100,11 @@ export default function page() {
                 Card Flip Game with emphasis on SEO, Cookies, and Accessibility.
               </Paragraph>
               <div style={{ marginBottom: "18px" }}></div>
-              <StyledPillContainer>
+              <PillContainer>
                 {recentAssessment.map((item, i) => (
                   <Pill key={i}>{item}</Pill>
                 ))}
-              </StyledPillContainer>
+              </PillContainer>
             </div>
           </Box>
           <Box>
@@ -116,11 +121,11 @@ export default function page() {
               <div style={{ marginBottom: "12px" }}></div>
               <Paragraph>Pharmaceutical Data Dashboard.</Paragraph>
               <div style={{ marginBottom: "18px" }}></div>
-              <StyledPillContainer>
+              <PillContainer>
                 {pharmaTech.map((item, i) => (
                   <Pill key={i}>{item}</Pill>
                 ))}
-              </StyledPillContainer>
+              </PillContainer>
             </div>
           </Box>
           <Box>
@@ -134,11 +139,11 @@ export default function page() {
               <div style={{ marginBottom: "12px" }}></div>
               <Paragraph>Financial Insights Platform.</Paragraph>
               <div style={{ marginBottom: "18px" }}></div>
-              <StyledPillContainer>
+              <PillContainer>
                 {soldiTech.map((item, i) => (
                   <Pill key={i}>{item}</Pill>
                 ))}
-              </StyledPillContainer>
+              </PillContainer>
             </div>
           </Box>
           <Box>
@@ -155,11 +160,11 @@ export default function page() {
               <div style={{ marginBottom: "12px" }}></div>
               <Paragraph>Ecommerce Application.</Paragraph>
               <div style={{ marginBottom: "18px" }}></div>
-              <StyledPillContainer>
+              <PillContainer>
                 {tremoloTech.map((item, i) => (
                   <Pill key={i}>{item}</Pill>
                 ))}
-              </StyledPillContainer>
+              </PillContainer>
             </div>
           </Box>
           <Box>
@@ -179,11 +184,11 @@ export default function page() {
                 content.
               </Paragraph>
               <div style={{ marginBottom: "18px" }}></div>
-              <StyledPillContainer>
+              <PillContainer>
                 {eliquisTech.map((item, i) => (
                   <Pill key={i}>{item}</Pill>
                 ))}
-              </StyledPillContainer>
+              </PillContainer>
             </div>
           </Box>
         </TextContainer>
