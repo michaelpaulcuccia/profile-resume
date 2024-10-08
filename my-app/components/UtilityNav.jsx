@@ -50,6 +50,11 @@ export default function UtilityNav() {
     setIsOpen(!isopen);
   };
 
+  const handleCustomLinkClick = () => {
+    console.log("click");
+    setIsOpen(!isopen);
+  };
+
   return (
     <>
       <Util>
@@ -72,18 +77,26 @@ export default function UtilityNav() {
       <Mobile>
         <MobileHamburger isopen={isopen} toggle={toggleMenu} />
         <MobileMenu isopen={isopen}>
-          <StyledCustomLink className="self" href="/">
-            home
-          </StyledCustomLink>
-          <StyledCustomLink className="add-pad" href="/work">
-            work
-          </StyledCustomLink>
-          <StyledCustomLink className="add-pad" href="/code">
-            code
-          </StyledCustomLink>
-          <StyledCustomLink className="add-pad" href="/play">
-            play
-          </StyledCustomLink>
+          <span onClick={handleCustomLinkClick}>
+            <StyledCustomLink className="self" href="/">
+              home
+            </StyledCustomLink>
+          </span>
+          <span onClick={handleCustomLinkClick}>
+            <StyledCustomLink className="add-pad" href="/work">
+              work
+            </StyledCustomLink>
+          </span>
+          <span onClick={handleCustomLinkClick}>
+            <StyledCustomLink className="add-pad" href="/code">
+              code
+            </StyledCustomLink>
+          </span>
+          <span onClick={handleCustomLinkClick}>
+            <StyledCustomLink className="add-pad" href="/play">
+              play
+            </StyledCustomLink>
+          </span>
           <div>
             <PillButton />
           </div>
