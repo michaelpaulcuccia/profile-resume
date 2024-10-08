@@ -1,7 +1,7 @@
-import React, { useContext} from 'react';
-import ThemeContext from '@/app/context/ThemeContext';
-import styled from 'styled-components';
-import { lightMode, darkMode } from '../constants/palette';
+import React, { useContext } from "react";
+import ThemeContext from "@/app/context/ThemeContext";
+import styled from "styled-components";
+import { lightMode, darkMode } from "../constants/palette";
 
 const PillContainer = styled.div`
   display: inline-flex;
@@ -12,20 +12,20 @@ const PillContainer = styled.div`
   border-radius: 999px; /* Large value to make it pill-shaped */
   background-color: ${({ theme }) =>
     theme === "lightMode" ? lightMode.Pill : darkMode.Pill};
-  color: #ffffff; /* Example text color */
+  color: ${({ theme }) =>
+    theme === "lightMode" ? darkMode.Pill : lightMode.Pill};
 `;
 
 const PillText = styled.div`
   text-align: center;
 `;
 
-export default function Pill({children}) {
-
+export default function Pill({ children }) {
   const { theme } = useContext(ThemeContext);
 
   return (
     <PillContainer theme={theme}>
       <PillText>{children}</PillText>
     </PillContainer>
-  )
+  );
 }

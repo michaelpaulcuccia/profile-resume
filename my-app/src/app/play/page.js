@@ -35,29 +35,30 @@ export default function page() {
           />
         </HeroImageContainer>
         <div style={{ marginBottom: "20px" }}></div>
-        <p>
+        <Paragraph>
           I live in Austin, Texas with my wife, son, daughter, and our two
           coonhounds.
-        </p>
+        </Paragraph>
       </TextContainer>
       <div style={{ marginBottom: "45px" }}></div>
       <TextContainer>
         <Title>interests</Title>
         <div style={{ marginBottom: "20px" }}></div>
         <Paragraph>
-          I try to get outside as much as possible. Living in the Texas Hill
-          Country and being surrounded by all of this amazing nature is such a
-          blessing. In addition to hiking, I am also a rock and ice climber,
-          skier, and have had many incredible mountain experiences.
+          When I'm not coding, I try to get outside as much as possible. Living
+          in the Texas Hill Country and being surrounded by all of this amazing
+          nature is such a blessing. I enjoy hiking, mountain biking, fishing,
+          and rock climbing.
         </Paragraph>
         <Paragraph>
           In 2007 I began training Brazilian Jiu Jitsu. The art and lifestyle of
-          Jiu Jitsu along with people I train with are a huge part of my life. I
-          am currently a member of Team Renzo Gracie Lakeway.
+          Jiu Jitsu along with people I train with are an important postive
+          influence. I am currently a member of Team Renzo Gracie Lakeway.
         </Paragraph>
         <Paragraph>
-          I play bass guitar and a little a bit of six-string too. My goal is to
-          eventually be good enough to play bass in a local cover band.
+          Music is something I love deeply, and has always played a huge part in
+          my life. I regularly attend local shows and concerts. I also play bass
+          guitar and a little a bit of six-string acoustic.
         </Paragraph>
       </TextContainer>
     </PageWrapper>

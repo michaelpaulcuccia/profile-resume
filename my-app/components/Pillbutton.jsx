@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
-    align-items: flex-end;
   }
 
   p {
@@ -19,6 +18,7 @@ const Wrapper = styled.div`
 
     @media (max-width: ${mobileBreakpoint}) {
       margin-left: 0;
+      margin-top: 4px;
     }
   }
 `;
