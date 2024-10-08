@@ -23,22 +23,16 @@ const MobileMenuContainer = styled.div`
 const MenuContent = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  height: 60%;
-  width: 80%;
+  gap: 50px;
 `;
 
-const MobileMenu = ({ isopen }) => {
+const MobileMenu = ({ isopen, children }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <MobileMenuContainer isopen={isopen} theme={theme}>
-      <MenuContent>
-        <div>Menu Item 1</div>
-        <div>Menu Item 2</div>
-        <div>Menu Item 3</div>
-      </MenuContent>
+      <MenuContent>{children}</MenuContent>
     </MobileMenuContainer>
   );
 };

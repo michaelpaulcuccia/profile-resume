@@ -8,10 +8,11 @@ import { mobileBreakpoint } from "../constants/breakpoint";
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  font-size: 14px; 
 
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
-  }
+    font-size: 16.1px; 
 
   p {
     margin-left: 6px;
@@ -33,6 +34,11 @@ const ButtonContainer = styled.div`
   background-color: ${({ theme }) =>
     theme === "lightMode" ? darkMode.Background : lightMode.Background};
   position: relative;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 46px; 
+    height: 23px; 
+    border-radius: 11.5px; 
 `;
 
 const Button = styled.button`
@@ -47,15 +53,21 @@ const Button = styled.button`
 
 const Circle = styled.div`
   width: 20px;
-  height: 21px;
+  height: 20px;
   background-color: ${({ theme }) =>
     theme === "lightMode" ? lightMode.Background : lightMode.Text};
   border-radius: 50%;
   position: absolute;
   left: ${({ toggled }) => (toggled ? "calc(100% - 20px)" : "0")};
   transition: left 0.3s ease;
-  top: 10px;
+  top: 50%; /* Center vertically */
   transform: translateY(-50%);
+
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 25px; /* 15% larger */
+    height: 25px; /* 15% larger */
+    left: ${({ toggled }) => (toggled ? "calc(100% - 25px)" : "0")};
+  }
 `;
 
 const PillButton = () => {
@@ -64,11 +76,7 @@ const PillButton = () => {
 
   const handleToggle = () => {
     setToggled(!toggled);
-    if (theme === "lightMode") {
-      setTheme("darkMode");
-    } else if (theme === "darkMode") {
-      setTheme("lightMode");
-    }
+    setTheme(theme === "lightMode" ? "darkMode" : "lightMode");
   };
 
   useEffect(() => {}, [handleToggle]);
@@ -80,7 +88,7 @@ const PillButton = () => {
           <Circle toggled={toggled} theme={theme} />
         </Button>
       </ButtonContainer>
-      <>{!toggled ? <p>dark</p> : <p>light</p>}</>
+      {!toggled ? <p>dark</p> : <p>light</p>}
     </Wrapper>
   );
 };

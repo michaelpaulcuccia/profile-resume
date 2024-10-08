@@ -37,12 +37,19 @@ const Mobile = styled.div`
   }
 `;
 
+const StyledCustomLink = styled(CustomLink)`
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 6rem;
+  }
+`;
+
 export default function UtilityNav() {
   const [isopen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isopen);
   };
+
   return (
     <>
       <Util>
@@ -64,7 +71,23 @@ export default function UtilityNav() {
       </Util>
       <Mobile>
         <MobileHamburger isopen={isopen} toggle={toggleMenu} />
-        <MobileMenu isopen={isopen} />
+        <MobileMenu isopen={isopen}>
+          <StyledCustomLink className="self" href="/">
+            home
+          </StyledCustomLink>
+          <StyledCustomLink className="add-pad" href="/work">
+            work
+          </StyledCustomLink>
+          <StyledCustomLink className="add-pad" href="/code">
+            code
+          </StyledCustomLink>
+          <StyledCustomLink className="add-pad" href="/play">
+            play
+          </StyledCustomLink>
+          <div>
+            <PillButton />
+          </div>
+        </MobileMenu>
       </Mobile>
     </>
   );
