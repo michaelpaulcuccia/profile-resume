@@ -49,8 +49,8 @@ const MobileHamburger = ({ isopen, toggle }) => {
   const { theme } = useContext(ThemeContext);
   return (
     <HamburgerButton onClick={toggle}>
-      <Line $isopen={isopen} theme={theme} />
-      <Line $isopen={isopen} theme={theme} />
+      <Line isopen={isopen} theme={theme} />
+      <Line isopen={isopen} theme={theme} />
     </HamburgerButton>
   );
 };

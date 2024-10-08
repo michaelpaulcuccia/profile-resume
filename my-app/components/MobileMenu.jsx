@@ -31,7 +31,7 @@ const MobileMenu = ({ isopen, children }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <MobileMenuContainer $isopen={isopen} theme={theme}>
+    <MobileMenuContainer isopen={isopen} theme={theme}>
       <MenuContent>{children}</MenuContent>
     </MobileMenuContainer>
   );
