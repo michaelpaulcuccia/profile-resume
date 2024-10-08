@@ -68,7 +68,7 @@ export const pharmaTech = [
   "Vercel",
 ];
 
-export const recentAssessment = [
+export const assessmentTech = [
   "React",
   "Typescript",
   "React-Router-DOM",
@@ -76,5 +76,15 @@ export const recentAssessment = [
   "CSS Animations/Keyframes",
   "Cookies",
   "Accessibility",
+  "Vercel",
+];
+
+export const lyceumTech = [
+  "Next.js",
+  "Typescript",
+  "Styled-Components",
+  "PostgreSQL",
+  "Prisma",
+  "OpenLibrary API",
   "Vercel",
 ];

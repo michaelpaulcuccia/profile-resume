@@ -17,13 +17,15 @@ import {
   tremoloTech,
   soldiTech,
   pharmaTech,
-  recentAssessment,
+  assessmentTech,
+  lyceumTech,
 } from "../../../constants/technologies";
 import Eliquis from "../../../public/assets/eliquis.png";
 import Tremelo from "../../../public/assets/Tremelo.png";
 import Soldi from "../../../public/assets/Soldi.png";
 import Pharma from "../../../public/assets/Pharma.png";
 import Assessment from "../../../public/assets/Assessment.png";
+import Lyceum from "../../../public/assets/Lyceum.png";
 
 const Box = styled.div`
   display: flex;
@@ -86,6 +88,27 @@ export default function page() {
           <div style={{ marginBottom: "48px" }}></div>
           <Box>
             <div className="image-container">
+              <Image src={Lyceum} width={200} height={100} alt="..." />
+            </div>
+            <div>
+              <CustomLink
+                href="https://lyceum-zeta.vercel.app/"
+                target="_blank"
+              >
+                <StyledTitle>Lyceum (IN PROGRESS)</StyledTitle>
+              </CustomLink>
+              <div style={{ marginBottom: "12px" }}></div>
+              <Paragraph>All-in-one digital book club.</Paragraph>
+              <div style={{ marginBottom: "18px" }}></div>
+              <PillContainer>
+                {lyceumTech.map((item, i) => (
+                  <Pill key={i}>{item}</Pill>
+                ))}
+              </PillContainer>
+            </div>
+          </Box>
+          <Box>
+            <div className="image-container">
               <Image src={Assessment} width={200} height={100} alt="..." />
             </div>
             <div>
@@ -101,7 +124,7 @@ export default function page() {
               </Paragraph>
               <div style={{ marginBottom: "18px" }}></div>
               <PillContainer>
-                {recentAssessment.map((item, i) => (
+                {assessmentTech.map((item, i) => (
                   <Pill key={i}>{item}</Pill>
                 ))}
               </PillContainer>
