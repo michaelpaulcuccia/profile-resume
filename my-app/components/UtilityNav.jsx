@@ -1,46 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { mobileBreakpoint } from "../constants/breakpoint";
 import CustomLink from "./CustomLink";
 import PillButton from "./Pillbutton";
+import MobileHamburger from "./MobileHamburger";
 
 const Util = styled.div`
   padding: 16px;
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: ${mobileBreakpoint}) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .self {
     flex: 1;
-    @media (max-width: ${mobileBreakpoint}) {
-      padding-bottom: 4px;
-    }
   }
 
   .add-pad {
     padding-left: 30px;
-
-    @media (max-width: ${mobileBreakpoint}) {
-      padding-bottom: 4px;
-      padding-left: 0;
-    }
   }
 
   :nth-child(4) {
     padding-right: 45px;
+  }
 
-    @media (max-width: ${mobileBreakpoint}) {
-      padding-right: 0;
-      padding-bottom: 12px;
-    }
+  @media (max-width: ${mobileBreakpoint}) {
+    display: none;
+  }
+`;
+
+const Mobile = styled.div`
+  display: none;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 16px;
+    display: flex;
   }
 `;
 
 export default function UtilityNav() {
+  const [isopen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isopen);
+  };
   return (
     <>
       <Util>
@@ -60,6 +61,10 @@ export default function UtilityNav() {
           <PillButton />
         </div>
       </Util>
+      <Mobile>
+        <MobileHamburger isopen={isopen} toggle={toggleMenu} />
+        hello mobile
+      </Mobile>
     </>
   );
 }
