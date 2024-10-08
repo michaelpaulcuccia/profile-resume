@@ -75,8 +75,8 @@ export default function UtilityNav() {
         </div>
       </Util>
       <Mobile>
-        <MobileHamburger isopen={isopen} toggle={toggleMenu} />
-        <MobileMenu isopen={isopen}>
+        <MobileHamburger $isopen={isopen} toggle={toggleMenu} />
+        <MobileMenu $isopen={isopen}>
           <span onClick={handleCustomLinkClick}>
             <StyledCustomLink className="self" href="/">
               home

@@ -10,14 +10,16 @@ const Item = styled(Link)`
     font-weight: bold;
   }
 `;
-export default function CustomLink({ href, children, target, className }) {
+
+export default function CustomLink({
+  href,
+  children,
+  target = "_self",
+  className,
+}) {
   return (
     <Item href={href} className={className} target={target}>
       {children}
     </Item>
   );
 }
-
-CustomLink.defaultProps = {
-  target: "_self",
-};
