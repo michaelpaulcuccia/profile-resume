@@ -39,7 +39,7 @@ const Mobile = styled.div`
 
 const StyledCustomLink = styled(CustomLink)`
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 `;
 
