@@ -4,6 +4,7 @@ import { mobileBreakpoint } from "../constants/breakpoint";
 import CustomLink from "./CustomLink";
 import PillButton from "./Pillbutton";
 import MobileHamburger from "./MobileHamburger";
+import MobileMenu from "./MobileMenu";
 
 const Util = styled.div`
   padding: 16px;
@@ -63,7 +64,7 @@ export default function UtilityNav() {
       </Util>
       <Mobile>
         <MobileHamburger isopen={isopen} toggle={toggleMenu} />
-        hello mobile
+        <MobileMenu isopen={isopen} />
       </Mobile>
     </>
   );

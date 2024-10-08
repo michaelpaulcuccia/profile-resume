@@ -1,25 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled, { css } from "styled-components";
+import ThemeContext from "@/app/context/ThemeContext";
+import { darkMode, lightMode } from "../constants/palette";
 
 const HamburgerButton = styled.button`
   position: relative;
   width: 30px;
   height: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10; /* Ensures it is above other content */
+  z-index: 10;
 `;
 
 const Line = styled.span`
   width: 100%;
   height: 4px;
-  background-color: white;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  background-color: ${({ theme }) =>
+    theme === "lightMode" ? darkMode.Secondary : lightMode.Secondary};
+  transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
   position: absolute;
 
   &:nth-child(1) {
@@ -44,10 +46,11 @@ const Line = styled.span`
 `;
 
 const MobileHamburger = ({ isopen, toggle }) => {
+  const { theme } = useContext(ThemeContext);
   return (
     <HamburgerButton onClick={toggle}>
-      <Line isopen={isopen} />
-      <Line isopen={isopen} />
+      <Line isopen={isopen} theme={theme} />
+      <Line isopen={isopen} theme={theme} />
     </HamburgerButton>
   );
 };
